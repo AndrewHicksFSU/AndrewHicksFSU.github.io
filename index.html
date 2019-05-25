@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>InPersonalTraining</title>
+  <!--BOOTSTRAP CSS-->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!--CSS-->
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <!--GOOGLE FONTS-->
+<link href="https://fonts.googleapis.com/css?family=Anton|Kodchasan:300,400,500,700|Ubuntu:400,700&display=swap" rel="stylesheet">
+  <!--FONTAWESOME-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+</head>
+<body>
+	<header id="title">
+			<nav class="navbar sitcky-top navbar-expand-lg navbar-dark">
+		 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler">
+		            <span class="navbar-toggler-icon"></span>
+		        </button>
+				<a href="index.html" class="navbar-brand">InPersonalTraining</a>
+		         <div class="collapse navbar-collapse" id="navbarToggler">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item">
+							<a class="nav-link" href="#">About</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Workouts</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Plans</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Blog</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Shop</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Contact</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		<div class="container-fluid header-padding">
+			<div class="row">
+	      		<div class="col-lg-6">
+	      			<h1>In Person (al) Training</h1>
+	      			<p class="heading-p">Online Personal Training, Redefined!</p>
+	      			<button type="button" class="btn btn-outline-light btn-lg">12.99 Monthly</button>
+	      			<button type="button" class="btn btn-primary btn-lg">109.99 Yearly</button>
+	      		</div>
+	        </div>
+		</div>
+		
+	</header>
+
+<!--ABOUT/GOAL/VISION-->
+
+	<section id="about">
+		<div class="container-fluid">
+			<h3 class="blue-text">About</h3>
+			<h2 class="heading-aligned-left blue-text">Our Vision</h2>
+				<div class="row">
+					<p class="col-lg-6 about-p">Our goal is to give the best advice for the best results. We want to educate you on what works and what doesn't by showing you the why of exercise. We aren't here to sell some magic weight loss pill or routine. The only secret here is hard work and consistency! Without these two foundations any diet plan or exercise routine will fail to get results. That's why it's my job to get you a personalized routine and educate you on nutrition so you can be successful. We love fitness and we love seeing people happy with themselves. We will make sure you have all the tools you need to reach your goals.
+					</p>
+					<img class="col-lg-5 about-pic" src="images/about-pic.jpeg">
+				</div>
+		</div>
+	</section>
+
+	<div class="container-fluid">
+		<div class="row">
+			<img src="images/page-break.jpeg" class="page-break-image">
+		</div>
+	</div>
+	<section id="different">
+		<h2 class="blue-text">Why We're Different</h2>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-lg-4">
+					<h3 class="blue-text">Personal</h3>
+					<i class="fas fa-dumbbell fa-2x blue-text"></i>
+					<p> Each programs is for you, based on your unique needs.</p>
+				</div>
+				<div class="col-lg-4">
+					<h3 class="blue-text">Flexible</h3>
+					<i class="fas fa-dumbbell fa-2x  blue-text"></i>
+					<p>Routines that work around your schedule.</p>
+				</div>
+				<div class="col-lg-4">
+					<h3 class="blue-text">Fun</h3>
+					<i class="fas fa-dumbbell fa-2x blue-text"></i>
+					<p>Workouts you enjoy enjoy, to help keep you on track.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+<div id="line"></div>
+
+	<section id="programs">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-lg-5 programs">
+					<img src="images/thumbs-up.png" class="programs-image">
+				</div>
+				<div class="col-lg-1">
+					<br>
+				</div>
+
+				<div class="col-lg-6 programs">
+
+					<h2 class="heading-aligned-left blue-text">What's Great About Our Programs</h2>
+					<h3>Custom programs</h3>
+					<p>We build unique programs that are suited to your needs to reach your goals</p>
+					<h3>Video Tutorials</h3>
+					<p>Videos to help show you the correct ways to execute the workouts for the best results</p>
+					<h3>Flexible Schedule</h3>
+					<p>Program built to work around your day</p>
+					<h3>Personal Support</h3>
+					<p>We will be there for you every step of the way on your journey</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<?php
+if(isset($_POST['email'])) {
+ 
+    // EDIT THE 2 LINES BELOW AS REQUIRED
+    $email_to = "drw_hcks@yahoo.com;
+    $email_subject = "Your email subject line";
+ 
+    function died($error) {
+        // your error code can go here
+        echo "We are very sorry, but there were error(s) found with the form you submitted. ";
+        echo "These errors appear below.<br /><br />";
+        echo $error."<br /><br />";
+        echo "Please go back and fix these errors.<br /><br />";
+        die();
+    }
+ 
+ 
+    // validation expected data exists
+    if(!isset($_POST['first_name']) ||
+        !isset($_POST['last_name']) ||
+        !isset($_POST['email']) ||
+        !isset($_POST['telephone']) ||
+        !isset($_POST['comments'])) {
+        died('We are sorry, but there appears to be a problem with the form you submitted.');       
+    }
+ 
+     
+ 
+    $first_name = $_POST['first_name']; // required
+    $last_name = $_POST['last_name']; // required
+    $email_from = $_POST['email']; // required
+    $telephone = $_POST['telephone']; // not required
+    $comments = $_POST['comments']; // required
+ 
+    $error_message = "";
+    $email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
+ 
+  if(!preg_match($email_exp,$email_from)) {
+    $error_message .= 'The Email Address you entered does not appear to be valid.<br />';
+  }
+ 
+    $string_exp = "/^[A-Za-z .'-]+$/";
+ 
+  if(!preg_match($string_exp,$first_name)) {
+    $error_message .= 'The First Name you entered does not appear to be valid.<br />';
+  }
+ 
+  if(!preg_match($string_exp,$last_name)) {
+    $error_message .= 'The Last Name you entered does not appear to be valid.<br />';
+  }
+ 
+  if(strlen($comments) < 2) {
+    $error_message .= 'The Comments you entered do not appear to be valid.<br />';
+  }
+ 
+  if(strlen($error_message) > 0) {
+    died($error_message);
+  }
+ 
+    $email_message = "Form details below.\n\n";
+ 
+     
+    function clean_string($string) {
+      $bad = array("content-type","bcc:","to:","cc:","href");
+      return str_replace($bad,"",$string);
+    }
+ 
+     
+ 
+    $email_message .= "First Name: ".clean_string($first_name)."\n";
+    $email_message .= "Last Name: ".clean_string($last_name)."\n";
+    $email_message .= "Email: ".clean_string($email_from)."\n";
+    $email_message .= "Telephone: ".clean_string($telephone)."\n";
+    $email_message .= "Comments: ".clean_string($comments)."\n";
+ 
+// create email headers
+$headers = 'From: '.$email_from."\r\n".
+'Reply-To: '.$email_from."\r\n" .
+'X-Mailer: PHP/' . phpversion();
+@mail($email_to, $email_subject, $email_message, $headers);  
+?>
+ 
+<!-- include your own success html here -->
+ 
+Thank you for contacting us. We will be in touch with you very soon.
+ 
+<?php
+ 
+}
+?>
+
+
+	<!---FOOTER--->
+	<section>
+		<div class="container-fluid">
+			<div class="row">
+				<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScxfgkWtFij_oIEM_YuWD_5PJQdfkVpAIUlAA1tTwm6JGOF3g/viewform?embedded=true" width="640" height="1155" frameborder="0" class="col-lg-12">Loading...</iframe>
+			</div>
+		</div>
+	</section>
+
+	<section id="footer">
+		<div class="container-fluid">
+			<h2 class="blue-text">Contact</h2>
+			<div class="blue-text contact-icons">
+				<a href="#"><i class="fab fa-facebook fa-4x fa-padding"></i></a>
+				<a href="#"><i class="fab fa-instagram fa-4x fa-padding"></i></a>
+				<a href="#"><i class="fas fa-envelope fa-4x fa-padding"></i></a>
+				<a href="#"><i class="fab fa-twitter fa-4x fa-padding"></i></a>
+			</div>
+		</div>
+	</section>
+
+
+
+
+
+  <!--BOOTSTRAP JAVASCRIPT-->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
